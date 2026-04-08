@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Mukta:wght@300;400;500;600;700&family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 33% 98%;
+    --foreground: 157 53% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 157 53% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 157 53% 10%;
+
+    --primary: 157 53% 28%;
+    --primary-foreground: 60 33% 98%;
+
+    --secondary: 40 24% 55%;
+    --secondary-foreground: 157 53% 10%;
+
+    --muted: 53 24% 92%;
+    --muted-foreground: 157 5% 35%;
+
+    --accent: 28 100% 50%;
+    --accent-foreground: 60 33% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 60 33% 98%;
+
+    --border: 40 24% 89%;
+    --input: 40 24% 85%;
+    --ring: 157 53% 28%;
+
+    --radius: 0.75rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  
+  /* Custom utility classes */
+  .btn-hover-effect {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+  
+  .section-padding {
+    @apply px-4 py-8 md:px-8 md:py-12 lg:px-16 lg:py-16;
+  }
+  
+  .hero-gradient {
+    @apply bg-gradient-to-r from-vivasayi-green to-vivasayi-teal;
+  }
+}
